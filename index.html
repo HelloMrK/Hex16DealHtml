@@ -86,7 +86,7 @@
                     var parts = line.split(":")[1].trim().split(" ");
                     for (var j = 0; j < parts.length; j++) {
                         var part = parts[j].trim();
-                        if (part.length == 4 && part.indexOf(".") == -1) {
+                        if ((part.length == 4||part.length == 8) && part.indexOf(".") == -1) {
                             output += part + "\n";
                         }
                     }
